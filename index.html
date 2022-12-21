@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Седона - главная</title>
+    <link rel="stylesheet" href="css/css-code.css">
+    <link rel="stylesheet" href="css/narmalize.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <div class="all-center">
+      <header>
+        <div class="navigation">
+          <ul>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="index.html" class="active-header"><img src="img/logo.png" width="138" height="70" alt="logo" /></a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="hotel.html">Гостиницы</a></li>
+          </ul>
+        </div>
+        <div class="header-images">
+          <img src="img/img-big.jpg" width="1200" height="500" alt="Sedona" />
+          <img src="img/for-logo-big.png" width="458" height="352" alt="Sedona+-2" />
+          <img src="img/plus-big-logo.png" width="1200" height="57" alt="Sedona+">
+        </div>
+      </header>
+      <main>
+        <div class="sedona-cause">
+          <h3>Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+        <div class="causes">
+          <div class="namber-one">
+            <div class="text">
+              <h3>Настоящий городок</h3>
+              <p>— №1 —</p>
+              <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="img-namber">
+              <img src="img/img-hotel.jpg" width="800" height="256" alt="city" />
+            </div>
+          </div>
+          <div class="advantage clearfix">
+            <article class="live">
+              <img id="img-hotel" src="img/img-small-hotel.png" width="75" height="72" alt="hotel" />
+              <h3>Жильё</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </article>
+            <article class="eatest">
+              <img id="img-eat" src="img/img-eat.png" width="74" height="70" alt="eat" />
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            </article>
+            <article class="psenter">
+              <img id="img-present" src="img/img-present.png" width="64" height="76" alt="present" />
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </article>
+          </div>
+          <div class="namber-two clearfix">
+            <div class="img-namber">
+              <img src="img/img-moiuntains.jpg" width="800" height="256" alt="city" />
+            </div>
+            <div class="text">
+              <h3>Там есть<br/> мост дьявола</h3>
+              <p>— №2 —</p>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+          </div>
+          <div class="nambers-rem">
+            <div class="one">
+              <h3>Небольшая площадь</h3>
+              <p>— №3 —</p>
+              <p>Все достопримечательности находятся очень близко</p>
+            </div>
+            <div class="two">
+              <h3>Красивая дорога</h3>
+              <p>— №4 —</p>
+              <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+            </div>
+            <div class="try">
+              <h3>Мало туристов</h3>
+              <p>— №5 —</p>
+              <p>Большинство едет в гранд каньон и толпится там</p>
+            </div>
+          </div>
+        </div>
+        <div class="map">
+          <div class="map-top">
+            <h2>Заинтересовались?</h2>
+            <p>Укажите предполагаемые даты поездки,<br/> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <button class="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+          </div>
+        </div>
+        <article class="hotel-search-box">
+          <h2>Article</h2>
+          <form method="post" action="#">
+            <div class="form-layout-row clearfix">
+              <label for="date-in" class="to-left" >Дата заезда:</label>
+              <input id="date-in" name="date-in" class="date-in to-right" type="text" placeholder="24 апреля 2017"/>
+            </div>
+            <div class="form-layout-row dates clearfix">
+              <label for="date-out" class="to-left">Дата выезда:</label>
+              <input id="date-out" name="date-out" class="date-out to-right" type="text" placeholder="4 июля 2017"/>
+            </div>
+            <div class="form-layout-row clearfix">
+              <div class="form-layout-row-half to-left clearfix">
+                <label for="count-adults" class="to-left">Взрослые:</label>
+                <div class="form-layout-row-half-btns to-right">
+                  <input class="btn-minus" type="button" value="-">
+                  <input id="count-adults" type="text" placeholder="2">
+                  <input class="btn-plus" type="button" value="+">
+                </div>
+              </div>
+              <div class="form-layout-row-half to-right clearfix">
+                <label for="count-children" class="count-children to-left">Дети:</label>
+                <div class="form-layout-row-half-btns to-right">
+                  <input class="btn-minus" type="button" value="-">
+                  <input id="count-children" type="text" placeholder="0">
+                  <input class="btn-plus" type="button" value="+">
+                </div>
+              </div>
+            </div>
+            <button class="btn-search" type="submit">Найти</button>
+          </form>
+        </article>
+      </main>
+      <footer class="footer-index clearfix">
+        <div class="map" id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838162.8369633064!2d-111.79513845!3d34.854378399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ%2C+USA!5e0!3m2!1sen!2sru!4v1435000602855" width="1196" height="473" allowfullscreen></iframe>
+        </div>
+        <div class="bot-map">
+          <div class="visit">#visitSEDONA</div>
+          <div class="link">
+            <a href="https://twitter.com/"><div class="twiter"><img src="img/twiter.png" width="17" height="15" alt="twitter" /></div></a>
+            <a href="https://www.facebook.com/"><div class="fase"><img src="img/fase.png" id="fase" width="10" height="19" alt="fasebook" /></div></a>
+            <a href="https://www.youtube.com/"><div class="you"><img src="img/you.png" id="you"  width="20" height="16" alt="youtub" /></div></a>
+          </div>
+          <div class="by-html">
+            <div class="span">WEBSITE by</div>
+            <a href="https://htmlacademy.ru/"> </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/js-code.js"></script>
+  </body>
+</html>
